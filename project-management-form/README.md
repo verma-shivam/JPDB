@@ -35,5 +35,18 @@ If the **primary key value is present** in the database, then available data is 
 
 ## Screenshots
 
+- **Dashboard**
+
+![alt](images/dashboard.JPG)
+
+- **Form**
+
+![alt](images/form.JPG)
+
+
+- **Database Visualization**
+
+![alt](images/visualization.JPG)
+
 
 
