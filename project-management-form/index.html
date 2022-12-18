@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html lang="en">
+  <head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h2 style="text-align: center;">Project Management Form</h2>
+        <form id="projectForm" method="post">
+            <div class="form-group">
+                <span>
+                    <label for="projectId">Project ID:</label>
+                    <label id="projectIdMsg"> </label>
+                </span>
+                <input
+                    type="text"
+                    class="form-control"
+                    name="projectId"
+                    id="projectId"
+                    placeholder="Enter Project ID"
+                    onchange="getProject()"
+                    required
+                />
+            </div>
+            <div class="form-group">
+                <label for="projectName">Project Name:</label>
+                <input
+                    type="text"
+                    class="form-control"
+                    id="projectName"
+                    placeholder="Enter Project Name"
+                    name="projectName"
+                />
+            </div>
+            <div class="form-group">
+                <label for="assignedTo">Assigned To:</label>
+                <input
+                    type="text"
+                    class="form-control"
+                    id="assignedTo"
+                    placeholder="Enter Student Name"
+                    name="assignedTo"
+                />
+            </div>
+            <div class="form-group">
+                <label for="assignedDate">Assigned Date:</label>
+                <input
+                    type="date"
+                    class="form-control"
+                    id="assignedDate"
+                    placeholder="Enter Assigned Date"
+                    name="assignedDate"
+                />
+            </div>
+            <div class="form-group">
+                <label for="deadline">Deadline:</label>
+                <input
+                    type="date"
+                    class="form-control"
+                    id="deadline"
+                    placeholder="Enter Deadline"
+                    name="deadline"
+                />
+            </div>
+            <div class="form-group text-center">
+                <input
+                    type="button"
+                    class="btn btn-primary"
+                    id="save"
+                    value="Save"
+                    onclick="saveData()"
+                />
+                <input
+                    type="button"
+                    class="btn btn-primary"
+                    id="update"
+                    value="Update"
+                    onclick="updateData()"
+                />
+                <input  
+                    type="button"
+                    class="btn btn-primary"
+                    id="reset"
+                    value="Reset"
+                    onclick="resetForm()"
+                />
+            </div>
+        </form>
+    </div>
+    
+    <script src="http://login2explore.com/jpdb/resources/js/0.0.3/jpdb-commons.js"></script>
+    <script src="index.js" ></script>
+
+  </body>
+</html>
